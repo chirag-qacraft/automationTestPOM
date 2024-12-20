@@ -3,7 +3,7 @@ import { RegisterUser } from "../pages/registerUser";
 import { AddToCart } from "../pages/addToCart";
 
 
-test('Add to Cart', async ({ page }) => {
+test('Add to Cart TC 2', async ({ page }) => {
 
   const registerUser = new RegisterUser(page, "", "");
 
@@ -39,5 +39,5 @@ test('Add to Cart', async ({ page }) => {
   
   await addToCartObj.cardPaymentMethod();
 
-  console.log ("Both Test 1 & 2 are Completed... Nice Experience!!!")
+  console.log ("Both Test 1 & 2 are Completed... Nice Experience!!!");
 });

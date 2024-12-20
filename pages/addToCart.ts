@@ -83,7 +83,7 @@ export class AddToCart{
 
     async cardPaymentMethod()
     {
-        await this.cardName.fill("Chirag");
+        await this.cardName.fill("robin");
         await this.cardNumber.fill("1234567890");
         await this.cardCVC.fill("311");
         await this.cardExpiryMonth.fill("01");

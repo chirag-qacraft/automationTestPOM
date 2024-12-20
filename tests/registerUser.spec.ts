@@ -3,7 +3,7 @@ import { RegisterUser } from "../pages/registerUser";
 import { AddToCart } from "../pages/addToCart";
 
 
-test('Register User', async ({ page }) => {
+test('Register User TC 1', async ({ page }) => {
 
   const registerUser = new RegisterUser(page, "", "");
 

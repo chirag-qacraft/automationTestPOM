@@ -109,15 +109,15 @@ export class RegisterUser
         await this.page.selectOption("//select[@id='years']", { value: '1995' });
         await this.checkBox1.click();
         await this.checkBox2.click();
-        await this.addrFirstNameTextBox.fill("Chirag");
-        await this.addrLastNameTextBox.fill("Ahir");
-        await this.addr1TextArea.fill("Bharwad vaas");
-        await this.addr2TextArea.fill("Waghodia Road");
+        await this.addrFirstNameTextBox.fill("Jackson");
+        await this.addrLastNameTextBox.fill("Robin");
+        await this.addr1TextArea.fill("address 1");
+        await this.addr2TextArea.fill("address 2");
         await this.page.selectOption("//select[@id='country']", { value: 'India' });
         await this.stateTextBox.fill("Gujarat");
         await this.cityTextBox.fill("Vadodara");
-        await this.zipTextBox.fill("390019");
-        await this.mobileTextBox.fill("9725832735");
+        await this.zipTextBox.fill("390025");
+        await this.mobileTextBox.fill("111111111");
         await this.createAccountButton.click();
     
     }
