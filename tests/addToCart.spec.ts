@@ -10,7 +10,7 @@ test('Add to Cart TC 2', async ({ page }) => {
   const username = registerUser.generateUsername(8);  // 8 characters for username
   const email = registerUser.generateEmail(10); 
 
-  await registerUser.openBrowser();
+//  await registerUser.openBrowser();
   await registerUser.loginPageMethod();
   await registerUser.signUpCredentialMethod(username, email);
   await registerUser.enterInformation();

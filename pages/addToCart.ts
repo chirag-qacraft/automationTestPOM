@@ -3,27 +3,27 @@ import { Console } from "console";
 
 export class AddToCart{
 
-    readonly page : Page;
-    readonly productLink : Locator;
-    readonly addToCartButton : Locator;
-    readonly contShoppingButton : Locator;
-    readonly cartLink : Locator;
-    readonly verifyItemInCart : Locator;
-    readonly verifyPrice : Locator;
-    readonly verifyQty : Locator;
-    readonly verifyTotalPrice : Locator;
-    readonly removeItemButton : Locator;
-    readonly verifyEmptyCart : Locator;
-    readonly viewCart : Locator;
-    readonly checkoutButton : Locator;
-    readonly placeOrderButton : Locator;
-    readonly cardName : Locator;
-    readonly cardNumber : Locator;
-    readonly cardCVC : Locator;
-    readonly cardExpiryMonth : Locator;
-    readonly cardExpiryYear : Locator;
-    readonly pay : Locator;
-    readonly invoice : Locator;
+    page : Page;
+    productLink : Locator;
+    addToCartButton : Locator;
+    contShoppingButton : Locator;
+    cartLink : Locator;
+    verifyItemInCart : Locator;
+    verifyPrice : Locator;
+    verifyQty : Locator;
+    verifyTotalPrice : Locator;
+    removeItemButton : Locator;
+    verifyEmptyCart : Locator;
+    viewCart : Locator;
+    checkoutButton : Locator;
+    placeOrderButton : Locator;
+    cardName : Locator;
+    cardNumber : Locator;
+    cardCVC : Locator;
+    cardExpiryMonth : Locator;
+    cardExpiryYear : Locator;
+    pay : Locator;
+    invoice : Locator;
 
     constructor (page:Page)
     {

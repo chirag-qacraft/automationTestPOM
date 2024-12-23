@@ -4,30 +4,30 @@ import { Console } from "console";
 export class RegisterUser 
 {
 
-    readonly page : Page;
+    page : Page;
     username: string;
     email: string;
-    readonly loginLink : Locator;
-    readonly nameTextBox : Locator;
-    readonly emailTextBox : Locator;
-    readonly signUpButton : Locator;
-    readonly titleRadioButton : Locator;
-    readonly passwordTextBox : Locator;
-    readonly accountCreatedMsg : Locator;
-    readonly continueButton : Locator;
-    readonly verifyUser : Locator;
-    readonly checkBox1 : Locator;
-    readonly checkBox2 : Locator;
-    readonly addrFirstNameTextBox : Locator;
-    readonly addrLastNameTextBox : Locator;
-    readonly addr1TextArea : Locator;
-    readonly addr2TextArea : Locator;
-    readonly stateTextBox : Locator;
-    readonly cityTextBox : Locator;
-    readonly zipTextBox : Locator;
-    readonly mobileTextBox : Locator;
-    readonly createAccountButton : Locator;
-    readonly logOutButton : Locator;
+    loginLink : Locator;
+    nameTextBox : Locator;
+    emailTextBox : Locator;
+    signUpButton : Locator;
+    titleRadioButton : Locator;
+    passwordTextBox : Locator;
+    accountCreatedMsg : Locator;
+    continueButton : Locator;
+    verifyUser : Locator;
+    checkBox1 : Locator;
+    checkBox2 : Locator;
+    addrFirstNameTextBox : Locator;
+    addrLastNameTextBox : Locator;
+    addr1TextArea : Locator;
+    addr2TextArea : Locator;
+    stateTextBox : Locator;
+    cityTextBox : Locator;
+    zipTextBox : Locator;
+    mobileTextBox : Locator;
+    createAccountButton : Locator;
+    logOutButton : Locator;
 
     
     constructor (page:Page, username: string, email:string)

@@ -35,9 +35,9 @@ const config: PlaywrightTestConfig = {
       channel: 'chrome',
       headless: false,
       /* Base URL to use in actions like `await page.goto('/')`. */
-    //  baseURL: 'http://automationexercise.com/',
-      // viewport: {width:1920, height:1080},
-     //Laptop viewport: {width:1366, height:768},
+     // baseURL: "http://automationexercise.com/",
+      viewport: {width:1920, height:1080},
+      //Laptop viewport: {width:1366, height:768},
 
      screenshot: "on",
      video: {

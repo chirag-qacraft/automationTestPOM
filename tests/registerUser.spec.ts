@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 import { RegisterUser } from "../pages/registerUser";
 import { AddToCart } from "../pages/addToCart";
 
-
 test('Register User TC 1', async ({ page }) => {
 
   const registerUser = new RegisterUser(page, "", "");
