@@ -33,12 +33,16 @@ export class RegisterUser
     constructor (page:Page, username: string, email:string)
     {
         this.page = page;
+
+        //SignUp Page
         this.username = username;
         this.email = email;
         this.loginLink = page.locator("//a[contains(text(),'Signup')]");
         this.nameTextBox = page.locator("//input[@placeholder='Name']");
         this.emailTextBox = page.locator("(//input[@placeholder='Email Address'])[2]");
         this.signUpButton = page.locator("//button[text()='Signup']");
+
+        //Registration Details
         this.titleRadioButton = page.locator("//input[@id='id_gender1']");
         this.passwordTextBox = page.locator("//input[@id='password']");
         this.accountCreatedMsg = page.locator("//b[text()='Account Created!']");
@@ -54,7 +58,9 @@ export class RegisterUser
         this.cityTextBox = page.locator("//input[@id='city']");
         this.zipTextBox = page.locator("//input[@id='zipcode']"); 
         this.mobileTextBox = page.locator("//input[@id='mobile_number']");
-        this.createAccountButton = page.locator("//button[text()='Create Account']"); 
+        this.createAccountButton = page.locator("//button[text()='Create Account']");
+        
+        //LogOut
         this.logOutButton = page.locator("//a[text()=' Logout']//parent::li");
 
     }
@@ -78,6 +84,7 @@ export class RegisterUser
         await this.page.goto("http://automationexercise.com/", { waitUntil: "domcontentloaded", timeout: 120000 });
 
     }
+
 
     async loginPageMethod()
     {

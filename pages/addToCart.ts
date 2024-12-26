@@ -28,17 +28,25 @@ export class AddToCart{
     constructor (page:Page)
     {
         this.page = page;
+
+        //Add To Cart
         this.productLink = page.locator("//a[contains(text(),'Products')]//parent::li");
         this.addToCartButton = page.locator("(//a[text()='Add to cart'])[1]");
         this.contShoppingButton = page.locator("//button[contains(text(),'Continue')]");
         this.cartLink = page.locator("//a[contains(text(),'Cart')]//parent::li");
+
+        //Verify Product Details
         this.verifyItemInCart = page.locator("//a[contains(text(),'Blue')]");
         this.verifyPrice = page.locator("(//p[contains(text(),'500')])[1]");
         this.verifyQty = page.locator("//button[text()='1']");
+
+        //Remove From Cart
         this.verifyTotalPrice = page.locator("//p[@class='cart_total_price']");
         this.removeItemButton = page.locator("//a[@class='cart_quantity_delete']");
         this.verifyEmptyCart = page.locator("//b[contains(text(),'empty!')]");
         this.viewCart = page.locator("//u[contains(text(),'View')]");
+
+        //CheckOut and Place order
         this.checkoutButton = page.locator("//a[contains(text(),'Checkout')]");
         this.placeOrderButton = page.locator("//a[contains(text(),'Place')]");
         this.cardName = page.locator("//input[@name='name_on_card']");
@@ -47,6 +55,8 @@ export class AddToCart{
         this.cardExpiryMonth = page.locator("//input[@name='expiry_month']");
         this.cardExpiryYear = page.locator("//input[@name='expiry_year']");
         this.pay = page.locator("//button[@id='submit']");
+
+        //Invoice
         this.invoice = page.locator("//a[contains(text(),'Invoice')]");
     }
 
