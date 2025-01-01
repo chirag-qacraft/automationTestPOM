@@ -79,13 +79,6 @@ export class RegisterUser
         return `${this.email}@gmail.com`;
     }
 
-    async openBrowser()
-    {
-        await this.page.goto("http://automationexercise.com/", { waitUntil: "domcontentloaded", timeout: 120000 });
-
-    }
-
-
     async loginPageMethod()
     {
         await this.page.waitForTimeout(6000);

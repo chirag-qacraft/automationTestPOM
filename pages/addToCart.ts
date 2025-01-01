@@ -39,9 +39,9 @@ export class AddToCart{
         this.verifyItemInCart = page.locator("//a[contains(text(),'Blue')]");
         this.verifyPrice = page.locator("(//p[contains(text(),'500')])[1]");
         this.verifyQty = page.locator("//button[text()='1']");
+        this.verifyTotalPrice = page.locator("//p[@class='cart_total_price']");
 
         //Remove From Cart
-        this.verifyTotalPrice = page.locator("//p[@class='cart_total_price']");
         this.removeItemButton = page.locator("//a[@class='cart_quantity_delete']");
         this.verifyEmptyCart = page.locator("//b[contains(text(),'empty!')]");
         this.viewCart = page.locator("//u[contains(text(),'View')]");
